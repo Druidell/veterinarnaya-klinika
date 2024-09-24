@@ -1,0 +1,257 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f9;
+}
+header {
+    background: #6076f0;
+    color: #f4f4f9;
+    padding: 20px 0;
+    text-align: center;
+}
+nav {
+    margin: 20px 0;
+}
+nav a {
+    margin: 0 15px;
+    color: #f4f4f9;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 5px;
+}
+nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #f4f4f9;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.nav-contact a:hover::after {
+    width: 100%;
+}
+
+.login {
+    margin-left: 100px;
+}
+
+main {
+    margin: 20px auto;
+    max-width: 1200px;
+}
+.maintwo {
+    padding: 60px 20px;
+}
+h2 {
+    color: #6076f0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.starter {
+    background-image: url(/veterinarnaya/picture/main.jpg);
+    background-size: cover;
+    height: 1000px;
+}
+.starter h1{
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+.starter-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 200px;
+    text-align: center;
+}
+.starter-text {
+    color: white;
+    padding: 30px;
+    font-size: 20px;
+}
+.starter-button {
+    min-width: 150px;
+    min-height: 60px;
+    font-size: 22px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    background: #6076f0;
+    border: none;
+    border-radius: 100px;
+    transition: all 0.3s ease-in-out 0s;
+    position: relative;
+    padding: 10px;
+}
+.starter-button:hover, .starter-button:focus {
+    color: #313133;
+    transform: translateY(-6px);
+}
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 150px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.about-text {
+    padding: 30px;
+    font-size: 20px;
+}
+.about-text img{
+    width: 350px;
+    height: 350px;
+    border-radius: 12px;
+}
+.services {
+    background-color: #f1f1f1;
+    border-left: 5px solid #6076f0;
+    padding-top: 50px;
+}
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+.serv {
+    border-radius: 12px;
+    padding: 30px;
+}
+.services-avatar {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: 0 auto 20px;
+}
+.services-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.services-text {
+    margin-bottom: 20px;
+}
+.team-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.team-member img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+}
+.reviews {
+    background: #f1f1f1;
+    padding: 20px;
+    border-left: 5px solid #6076f0;
+    margin: 20px 0;
+}
+.review {
+    margin-bottom: 15px;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+.contact-form input, .contact-form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #6076f0;
+    color: white;
+    position: relative;
+}
+
+/*work*/
+.work {
+    padding: 20px;
+    text-align: center;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+/*contact*/
+.contact-grid {
+    margin-top: 100px;
+}
+
+/*login*/
+.login-form-input {
+    background-color: #fff;
+    border: 1px solid #e4e4e4;
+    border-radius: 18px;
+    color: #202020;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 12.99px;
+    margin-bottom: 31px;
+    padding: 20px 0 23px;
+    text-align: center;
+    width: 100%;
+}
+.login-form-button {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.login-form-text {
+    color: #a1a7b0;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.5px;
+}
+
+/*admin*/
+.admin {
+    text-align: center;
+    padding-bottom: 680px;
+}
+.widget {
+    text-align: center;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 30%; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.widget h3 {
+    margin-top: 0;
+}
+table {
+    margin: 0 auto;
+}
